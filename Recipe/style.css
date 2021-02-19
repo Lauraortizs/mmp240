@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Chewy&display=swap');
+body {
+    font-family: 'acme';
+    font-size: '20px';
+}
+
+h1 {
+    color: salmon;
+    font-family: 'hewy', cursive;
+}
+
+h3 {
+    color: rgb(14, 85, 79)
+}
+
+.main-image {
+    border: solid 8px rgb(61, 165, 168);
+}
+
+#wrapper {
+    border: solid 10px rgb(58, 161, 136);
+    padding: 20px;
+}
