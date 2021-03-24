@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@805&display=swap');
+body {
+    font-family: 'Public Sans';
+}
+
+#wrapper {
+    max-width: 1200px;
+    padding: 10px 20px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+#page-header {
+    background: linear-gradient(90deg, rgba(13, 13, 13, 1) 40%, rgba(227, 228, 235, 0) 65%), url("Images/HIMYM.jpeg") right no-repeat;
+    background-size: contain;
+    height: 350px;
+    border-radius: 10px 10px 0 0;
+}
+
+.header-banner {
+    width: 40%;
+    height: 100%;
+    padding: 1em 1em 2em 1em;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.title {
+    color: #fff;
+    position: center;
+}
+
+#page-header p {
+    color: #fff;
+    font-size: 18px;
+}
+
+.btn_play {
+    align-self: flex-end;
+    box-sizing: border-box;
+    display: block;
+    background-image: url("Images/play_button.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: 20px;
+    padding-left: 80px;
+    width: 231px;
+    height: 82px;
+    color: rgb(7, 6, 6);
+    font-size: 40px;
+    line-height: 82px;
+    text-decoration: none;
+}
+
+nav {
+    background-color: gray;
+    border-radius: 0 0 10px 10px;
+    margin-bottom: 2em;
+    height: 50px;
+}
+
+nav ul {
+    margin: 0;
+    height: 100%;
+    display: flex;
+    align-items: stretch;
+}
+
+nav li {
+    display: inline;
+    width: 170px;
+    text-align: center;
+    line-height: 50px;
+}
+
+nav li a {
+    color: #000;
+    text-decoration: none;
+}
+
+nav li a:hover {
+    text-decoration: none;
+}
+
+nav li.selected {
+    border-bottom: 3px solid black;
+}
+
+.content {
+    padding-left: 2em;
+}
+
+.content p {
+    opacity: 0.6;
+}
+
+.col {
+    width: 48%
+}
+
+.col-right {
+    float: right;
+}
+
+.col-left {
+    float: left;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+}
+
+h2 {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    margin-bottom: 0.5em;
+    padding-left: 1em;
+}
