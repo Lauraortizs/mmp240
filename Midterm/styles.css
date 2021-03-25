@@ -5,11 +5,12 @@ body {
 
 #wrapper {
     max-width: 1200px;
-    padding: 10px 20px;
+    padding: 10px 20px 50px 20px;
     margin: auto;
     display: flex;
     flex-direction: column;
     align-items: stretch;
+    position: relative;
 }
 
 #page-header {
@@ -37,6 +38,13 @@ body {
 #page-header p {
     color: #fff;
     font-size: 18px;
+}
+
+#page-header h2 {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    margin-bottom: 0.5em;
+    padding-left: 1em;
 }
 
 .btn_play {
@@ -113,11 +121,27 @@ nav li.selected {
 footer {
     position: absolute;
     bottom: 0;
+    margin-left: 150px;
 }
 
-h2 {
-    font-size: 1.5rem;
-    text-transform: uppercase;
-    margin-bottom: 0.5em;
-    padding-left: 1em;
+/*** Episodes Styles***/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+.episodes-container {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: space-between; */
+}
+
+.episode-card {
+    /* width: 32%; */
+    width: 200px;
+    margin: 0 10px 10px 10px;
+}
+
+.img-responsive {
+    width: 100%;
+    border-radius: 10px 10px 10px 10px;
 }
