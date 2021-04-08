@@ -154,8 +154,9 @@ footer {
 }
 
 .episode-card {
-    width: 180px;
+    width: 195px;
     margin: 0 10px 10px 10px;
+    flex: 1 1 2;
 }
 
 .img-responsive {
