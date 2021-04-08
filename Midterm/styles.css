@@ -155,6 +155,7 @@ footer {
 
 .episode-card {
     width: 200px;
+    flex: 1 1 auto;
     margin: 0 10px 10px 10px;
 }
 
