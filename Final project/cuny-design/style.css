@@ -1,1 +1,49 @@
 /* CSS Styles */
+
+#wrapper {
+    padding-top: 1em;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.menu {
+    display: none;
+}
+
+.top-nav li, .top-nav form {
+    margin: 1em;
+}
+
+/*Search programs navigation*/
+
+.search-programs li {
+    min-height: 28px;
+    background-color: gray;
+    border-radius: 5px;
+    margin: 10px 0;
+    padding: 5px;
+    padding-top: 10px;
+}
+
+@media(min-width:768px) {
+    .menu {
+        display: flex;
+    }
+    .menu, ul {
+        display: flex;
+    }
+    .toggle-nav {
+        display: none;
+    }
+    .search-programs ul {
+        display: flex;
+        justify-content: space-between;
+    }
+    .search-programs li {
+        width: 31%;
+    }
+}
