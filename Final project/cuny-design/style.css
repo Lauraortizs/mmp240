@@ -1,5 +1,9 @@
 /* CSS Styles */
 
+p, h2, h3, h4 {
+    margin-bottom: 1em;
+}
+
 #wrapper {
     padding-top: 1em;
 }
@@ -12,10 +16,15 @@ header {
 
 .menu {
     display: none;
+    clear: right;
 }
 
 .top-nav li, .top-nav form {
-    margin: 1em;
+    margin: 0 1em;
+}
+
+.toggle-nav {
+    float: right;
 }
 
 /*Search programs navigation*/
@@ -25,15 +34,52 @@ header {
     background-color: gray;
     border-radius: 5px;
     margin: 10px 0;
-    padding: 5px;
     padding-top: 10px;
+}
+
+.search-programs li a {
+    margin: 0.5em;
+}
+
+.search-programs li ul {
+    display: none;
+}
+
+.search-programs li:hover ul {
+    display: block;
+}
+
+/* .search-programs li ul { 
+    position: absolute;
+    width: 100%;
+    /* margin-top: 0.5em; */
+
+/* } */
+
+.hero-banner {
+    background-image: url("images/Queens.jpg");
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 30vh;
+    padding: 2em;
+    width: 100vw;
+}
+
+.hero-banner h3 {
+    background-color: rgb(0, 0, 0, 0.5);
+    color: white;
+    padding: 1em;
+    width: 200px;
+    line-height: 1.5em;
+    font-size: 1.5em;
 }
 
 @media(min-width:768px) {
     .menu {
         display: flex;
     }
-    .menu, ul {
+    .menu ul {
         display: flex;
     }
     .toggle-nav {
@@ -42,8 +88,29 @@ header {
     .search-programs ul {
         display: flex;
         justify-content: space-between;
+        align-items: flex-start;
     }
     .search-programs li {
         width: 31%;
+        position: relative;
+    }
+    .hero-banner h3 {
+        width: 360px;
+    }
+    .search-programs li ul {
+        position: absolute;
+        width: 100%;
+        margin-top: 0.5em;
+    }
+    .search-programs li ul li {
+        width: 100%;
+        margin: 0;
+        border-radius: 0;
+        background-color: lightgray;
+    }
+    .layout {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-column-gap: 2em;
     }
 }
