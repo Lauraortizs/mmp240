@@ -18,6 +18,13 @@ header {
 .menu {
     display: none;
     clear: right;
+    text-decoration: none;
+    color: #023047;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: #023047;
 }
 
 .top-nav li, .top-nav form {
@@ -32,7 +39,8 @@ header {
 
 .search-programs li {
     min-height: 28px;
-    background-color: gray;
+    background-color: #094074;
+    font-size: 20px;
     border-radius: 5px;
     margin: 10px 0;
     padding-top: 10px;
@@ -40,6 +48,8 @@ header {
 
 .search-programs li a {
     margin: 0.5em;
+    color: white;
+    text-decoration: none;
 }
 
 .search-programs li ul {
@@ -59,7 +69,7 @@ header {
 
 .hero-banner {
     background-image: url("images/queens1.jpg");
-    background-size: auto;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     height: 30vh;
@@ -76,6 +86,28 @@ header {
     font-size: 1.5em;
 }
 
+.hero-banner ul {
+    align-self: flex-end;
+    box-sizing: border-box;
+    display: block;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: 80px;
+    padding-left: 15px;
+    width: 100px;
+    height: 50px;
+    background-color: #023047;
+    font-size: 20px;
+    line-height: 40px;
+    background-size: center;
+    border-radius: 5px;
+}
+
+.btn_apply {
+    text-decoration: none;
+    color: white;
+}
+
 /* program pages */
 
 .layout-programs {
@@ -89,6 +121,7 @@ header {
 .card {
     border: solid 1px lightgray;
     border-radius: 10px;
+    transition: transform 0.5s ease-in, box-shadow 0.5s ease-in;
 }
 
 .card img {
@@ -104,8 +137,9 @@ header {
     text-decoration: none;
 }
 
-.card-link:hover {
-    background-color: rgba(255, 0, 0 0.1);
+.card:hover {
+    transform: translate(0, 5px);
+    box-shadow: 0 -5px 5px #999;
 }
 
 @media(min-width:768px) {

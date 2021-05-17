@@ -82,6 +82,7 @@ p {
     font-size: 40px;
     line-height: 82px;
     text-decoration: none;
+    background-size: center;
 }
 
 nav {
