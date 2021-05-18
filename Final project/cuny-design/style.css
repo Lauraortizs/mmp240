@@ -1,5 +1,6 @@
 /* CSS Styles */
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
 p, h2, h3, h4 {
     margin-bottom: 1em;
 }
@@ -38,6 +39,7 @@ header {
 /*Search programs navigation*/
 
 .search-programs li {
+    font-family: 'Roboto', sans-serif;
     min-height: 28px;
     background-color: #094074;
     font-size: 20px;
@@ -163,6 +165,9 @@ header {
     }
     .hero-banner h3 {
         width: 360px;
+    }
+    .hero-banner ul {
+        align-self: flex-end;
     }
     .search-programs li ul {
         position: absolute;
