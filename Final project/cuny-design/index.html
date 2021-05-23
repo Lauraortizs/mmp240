@@ -12,8 +12,8 @@
 <body>
   <div id="wrapper">
     <header>
-      <img src="images/CUNYDesign.jpg" alt="logo">
 
+      <a href="index.html"><img src="images/CUNYDesign.jpg" alt="logo"></a>
       <nav class="top-nav">
         <img class="toggle-nav" src="images/menu.svg" alt="menu" onclick="showMenu();">
         <div class="menu" id="menu">
@@ -25,8 +25,8 @@
               </a></li>
           </ul>
           <form class="search" action="#" method="post">
-            <input type="text" name="search" value="Search">
-            <button type="button" name="button"> Go </button>
+            <input type="text" name="search" placeholder="Search..." value="">
+            <a href="#"> <img src="images/search.svg" alt="search" width="18"> </a>
           </form>
         </div>
 
@@ -35,8 +35,6 @@
 
     </header>
     <div class="search-programs">
-      <h2>Find a Design Program</h2>
-
       <ul>
         <li> <a href="#">DISCIPLINE </a>
           <ul>
@@ -48,8 +46,8 @@
 
         <li> <a href="#"> DEGREE</a>
           <ul>
-            <li> <a href="#">Associate</a></li>
-            <li> <a href="#">Bachelor</a></li>
+            <li> <a href="associate.html">Associate</a></li>
+            <li> <a href="bachelor.html">Bachelor</a></li>
 
           </ul>
         </li>
@@ -62,58 +60,66 @@
             <li> <a href="queens.html"> Queens</a></li>
           </ul>
       </ul>
-      </li>
-      </li>
+
     </div>
 
 
-  </div>
-  <div class="hero-banner">
-    <h3>Queens College Ranked in Top 25 of Best Public Colleges and Universities of Graphic Design in the Nations</h3>
-    <ul>
-      <a href="#" class="btn_apply">Apply</a>
-    </ul>
 
-  </div>
-  <div class="layout">
-    <section class="news">
-      <h3> Design News</h3>
-      <article>
-        <h4> CUNY TV Wins 21st New York Emmy Award For Animated OpeningSequence of "Shades of U.S.'April 27,2020</h4>
+    <div class="hero-banner">
+      <div class="banner-column">
+        <h3>Queens College Ranked in Top 25 of Best Public Colleges and Universities of Graphic Design in the Nations
+        </h3>
+        <a href="http://art.qc.cuny.edu/design-curriculum/" class="btn_apply">Apply</a>
+      </div>
 
-        <p>The City University of New York won two awards in the 63rd New York Emmy Awards, as CUNY TV and the New York
-          City College of Technology each earned honors in Saturday’s ceremony. The award for CUNY TV brings to 21 the
-          total number of Emmys the station has been awarded by the National Academy of Television Arts & Sciences New
-          York Chapter.</p>
-        <a href="#">Read More</a>
+    </div>
+    <div class="layout">
+      <section class="news">
+        <h3> Design News</h3>
+        <article>
+          <h4> CUNY TV Wins 21st New York Emmy Award For Animated OpeningSequence of "Shades of U.S.'</h4>
+          <h5>April 27,2020</h5>
 
-        <h4>CUNY Expands Digital Skills Curriculum and Creates Student Pipeline for Tech Jobs
-          October 28, 2019</h4>
-        <p>The City University of New York has significantly expanded its digital skills curriculum as part of a
-          broad-based effort to produce a steady pipeline of diverse, adaptable, critical thinkers who can thrive in a
-          workplace environment that is increasingly reliant on advanced digital technologies across most sectors of the
-          economy. Another aim of this initiative is to encourage traditionally underrepresented groups to take up
-          tech-focused areas of study.</p>
-        <a href="#"> Read More</a>
+          <p>The City University of New York won two awards in the 63rd New York Emmy Awards, as CUNY TV and the New
+            York
+            City College of Technology each earned honors in Saturday’s ceremony. The award for CUNY TV brings to 21 the
+            total number of Emmys the station has been awarded by the National Academy of Television Arts & Sciences New
+            York Chapter.</p>
+          <a href="#">Read More</a>
 
-      </article>
+          <h4>CUNY Expands Digital Skills Curriculum and Creates Student Pipeline for Tech Jobs
+          </h4>
+          <h5>October 28, 2019</h5>
+          <p>The City University of New York has significantly expanded its digital skills curriculum as part of a
+            broad-based effort to produce a steady pipeline of diverse, adaptable, critical thinkers who can thrive in a
+            workplace environment that is increasingly reliant on advanced digital technologies across most sectors of
+            the
+            economy. Another aim of this initiative is to encourage traditionally underrepresented groups to take up
+            tech-focused areas of study.</p>
+          <a href="#"> Read More</a>
 
-    </section>
-    <section class="events">
-      <h3>Events</h3>
-      <article>
-        <img src="images/Digital-Design-Showcase-cropped.jpg" alt="">
-        <h4>Virtual Digital Design Showcase Day</h4>
-        <p> Date: June 18, 2020<br>
-          Time: 2:00 PM — 4:00 PM<br>
-          College: Bronx Community College
-        </p>
-      </article>
-    </section>
+        </article>
+
+      </section>
+      <section class="events">
+        <div class="event-box">
+          <h3>Events</h3>
+          <article>
+            <img src="images/Digital-Design-Showcase.jpg" alt="">
+            <h4>Virtual Digital Design Showcase Day</h4>
+            <p> Date: June 18, 2020<br>
+              Time: 2:00 PM — 4:00 PM<br>
+              College: Bronx Community College
+            </p>
+          </article>
+        </div>
+      </section>
+    </div>
   </div>
   <footer>Copyright 2020 The City University of New York</footer>
 
   <script src="toggle-menu.js"></script>
+
 </body>
 
 </html>

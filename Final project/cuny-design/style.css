@@ -1,12 +1,17 @@
 /* CSS Styles */
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Saira+Extra+Condensed:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Puritan:wght@700&display=swap');
 p, h2, h3, h4 {
     margin-bottom: 1em;
 }
 
 #wrapper {
-    padding-top: 1em;
+    max-width: 2000px;
     margin: 1em;
 }
 
@@ -29,23 +34,45 @@ header {
 }
 
 .top-nav li, .top-nav form {
-    margin: 0 1em;
+    margin: 0.5em 0;
 }
 
 .toggle-nav {
     float: right;
 }
 
+.search {
+    display: flex;
+    align-items: center;
+}
+
+.search input {
+    height: 30px;
+}
+
+.search a {
+    display: inline-block;
+    background-color: #094074;
+    padding: 8px;
+    border-radius: 2px;
+}
+
 /*Search programs navigation*/
 
+.search-programs {
+    background-color: #094074;
+    text-align: center;
+}
+
 .search-programs li {
+    cursor: pointer;
     font-family: 'Roboto', sans-serif;
     min-height: 28px;
-    background-color: #094074;
+    line-height: 28px;
     font-size: 20px;
     border-radius: 5px;
     margin: 10px 0;
-    padding-top: 10px;
+    padding: 10px 0;
 }
 
 .search-programs li a {
@@ -54,60 +81,78 @@ header {
     text-decoration: none;
 }
 
+.search-programs li ul li {
+    width: 100%;
+    margin: 0;
+    border-radius: 0;
+    background-color: #5489b9;
+    transition: background-color .5s ease-in;
+}
+
+.search-programs li ul li:hover {
+    background-color: #094074;
+}
+
 .search-programs li ul {
-    display: none;
+    overflow: hidden;
+    display: block;
+    max-height: 0;
+    transition: max-height .5s ease-in-out;
 }
 
 .search-programs li:hover ul {
-    display: block;
+    max-height: 500px;
 }
 
-/* .search-programs li ul { 
-    position: absolute;
-    width: 100%;
-    /* margin-top: 0.5em; */
-
-/* } */
-
 .hero-banner {
+    display: flex;
+    align-items: flex-end;
+    box-sizing: border-box;
     background-image: url("images/queens1.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    height: 30vh;
+    height: 40vh;
+    min-height: 295px;
     padding: 2em;
-    width: 100vw;
+    margin-bottom: 4em;
+}
+
+.banner-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .hero-banner h3 {
+    font-family: 'Roboto Condensed', sans-serif;
     background-color: rgb(0, 0, 0, 0.5);
     color: white;
-    padding: 1em;
+    padding: 0.5em 1em;
     width: 200px;
-    line-height: 1.5em;
-    font-size: 1.5em;
+    line-height: 1.4em;
+    font-size: 1em;
 }
 
-.hero-banner ul {
-    align-self: flex-end;
-    box-sizing: border-box;
+.btn_apply {
+    font-family: 'Roboto Condensed', sans-serif;
+    text-decoration: none;
+    color: white;
+    transition: background-color .5s ease-in, box-shadow .5s ease-in, transform .5s ease-in;
+    text-align: center;
     display: block;
-    background-size: contain;
-    background-repeat: no-repeat;
-    margin-right: 80px;
-    padding-left: 15px;
     width: 100px;
     height: 50px;
     background-color: #023047;
     font-size: 20px;
-    line-height: 40px;
-    background-size: center;
+    line-height: 50px;
     border-radius: 5px;
 }
 
-.btn_apply {
-    text-decoration: none;
-    color: white;
+.btn_apply:hover {
+    background-color: #14a5d1;
+    box-shadow: 0 5px 20px #999;
+    transform: scale(1.05);
 }
 
 /* program pages */
@@ -132,6 +177,34 @@ header {
 
 .card-body {
     padding: 1em;
+    color: #094074;
+    font-family: 'Roboto Mono';
+    font-size: 16px;
+    line-height: 1.1;
+}
+
+.card-body h3 {
+    font-family: ' Saira Extra Condensed', sans-serif;
+    font-size: 20px;
+    font-weight: bolder;
+    color: #023047;
+}
+
+.card-body h2 {
+    font-family: ' Saira Extra Condensed', sans-serif;
+    font-size: 18px;
+}
+
+.card-body h4 {
+    font-weight: 700;
+}
+
+.card-body p {
+    /* background-color: #d4edf5; */
+    border-radius: 5px;
+    padding: 1px;
+    line-height: 1.1;
+    font-weight: lighter;
 }
 
 .card-link {
@@ -144,19 +217,98 @@ header {
     box-shadow: 0 -5px 5px #999;
 }
 
+/* news */
+
+.news h3 {
+    font-family: 'Saira Extra Condensed', sans-serif;
+    font-size: 58px;
+    color: #023047;
+}
+
+.news h4 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    color: #023047;
+}
+
+.news h5 {
+    font-family: 'Roboto Slab', serif;
+    font-size: 14px;
+    color: #094074;
+    margin-bottom: 1em;
+}
+
+.news p {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 16px;
+    color: #094074;
+    margin-bottom: 2em;
+    line-height: 1.1;
+}
+
+.article {
+    position: fixed;
+}
+
+.news a {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #094074;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    padding: 10px;
+    margin-bottom: 2em;
+}
+
+.events {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 16px;
+    color: #094074;
+}
+
+.events * {
+    display: inline-grid;
+}
+
+.event-box {
+    background-color: #D1E0E7;
+    padding: 20px 30px;
+    border-radius: 5px;
+    box-shadow: 0px 1px 5px darkgrey;
+}
+
+.events h3 {
+    font-family: 'Puritan', sans-serif;
+    font-size: 26px;
+}
+
+.events h4 {
+    font-family: 'Puritan', sans-serif;
+    font-size: 20px;
+}
+
+footer {
+    padding: 20px;
+}
+
 @media(min-width:768px) {
     .menu {
         display: flex;
+        align-items: center;
     }
     .menu ul {
         display: flex;
+    }
+    .top-nav li, .top-nav form {
+        margin-left: 2em;
     }
     .toggle-nav {
         display: none;
     }
     .search-programs ul {
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         align-items: flex-start;
     }
     .search-programs li {
@@ -165,6 +317,7 @@ header {
     }
     .hero-banner h3 {
         width: 360px;
+        font-size: 1.5em;
     }
     .hero-banner ul {
         align-self: flex-end;
@@ -173,12 +326,6 @@ header {
         position: absolute;
         width: 100%;
         margin-top: 0.5em;
-    }
-    .search-programs li ul li {
-        width: 100%;
-        margin: 0;
-        border-radius: 0;
-        background-color: #094074;
     }
     .layout {
         display: grid;
