@@ -166,6 +166,7 @@ header {
 }
 
 .card {
+    overflow: hidden;
     border: solid 1px lightgray;
     border-radius: 10px;
     transition: transform 0.5s ease-in, box-shadow 0.5s ease-in;
@@ -200,7 +201,7 @@ header {
 }
 
 .card-body p {
-    /* background-color: #d4edf5; */
+    height: 195px;
     border-radius: 5px;
     padding: 1px;
     line-height: 1.1;
@@ -331,5 +332,8 @@ footer {
         display: grid;
         grid-template-columns: 2fr 1fr;
         grid-column-gap: 2em;
+    }
+    .card-body p {
+        height: 170px;
     }
 }
